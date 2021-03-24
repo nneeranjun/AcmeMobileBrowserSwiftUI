@@ -13,6 +13,9 @@
 		115DB113260B066D00290177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115DB112260B066D00290177 /* Preview Assets.xcassets */; };
 		115DB11E260B066E00290177 /* AcmeMobileBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB11D260B066E00290177 /* AcmeMobileBrowserTests.swift */; };
 		115DB129260B066E00290177 /* AcmeMobileBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB128260B066E00290177 /* AcmeMobileBrowserUITests.swift */; };
+		115DB13A260B069100290177 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB139260B069100290177 /* WebView.swift */; };
+		115DB13F260B19D300290177 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB13E260B19D300290177 /* SearchBar.swift */; };
+		115DB144260B1D2C00290177 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB143260B1D2C00290177 /* ToolBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		115DB124260B066E00290177 /* AcmeMobileBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcmeMobileBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115DB128260B066E00290177 /* AcmeMobileBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeMobileBrowserUITests.swift; sourceTree = "<group>"; };
 		115DB12A260B066E00290177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115DB139260B069100290177 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		115DB13E260B19D300290177 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		115DB143260B1D2C00290177 /* ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				115DB10F260B066D00290177 /* Assets.xcassets */,
 				115DB114260B066D00290177 /* Info.plist */,
 				115DB111260B066D00290177 /* Preview Content */,
+				115DB139260B069100290177 /* WebView.swift */,
+				115DB13E260B19D300290177 /* SearchBar.swift */,
+				115DB143260B1D2C00290177 /* ToolBar.swift */,
 			);
 			path = AcmeMobileBrowser;
 			sourceTree = "<group>";
@@ -259,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115DB13A260B069100290177 /* WebView.swift in Sources */,
+				115DB13F260B19D300290177 /* SearchBar.swift in Sources */,
+				115DB144260B1D2C00290177 /* ToolBar.swift in Sources */,
 				115DB10E260B066C00290177 /* ContentView.swift in Sources */,
 				115DB10C260B066C00290177 /* AcmeMobileBrowserApp.swift in Sources */,
 			);

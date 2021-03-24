@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var url: String = "https://medium.com/macoclock/how-to-use-webkit-webview-in-swiftui-4b944d04190a"
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            HStack {
+                ToolBar(url: url)
+            }
+            WebView(request: URLRequest(url: URL(string: url)!))
+        }
     }
 }
 
