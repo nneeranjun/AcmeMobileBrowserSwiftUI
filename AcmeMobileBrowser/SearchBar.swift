@@ -12,7 +12,9 @@ struct SearchBar: View {
     @State var text: String
     
     var body: some View {
-        TextField("Search...", text: $text)
+        TextField("Search...", text: $text, onCommit: {
+            
+        })
             .padding(7)
             .padding(.horizontal, 25)
             .background(Color(.tertiarySystemFill))

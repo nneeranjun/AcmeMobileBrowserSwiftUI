@@ -16,6 +16,8 @@
 		115DB13A260B069100290177 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB139260B069100290177 /* WebView.swift */; };
 		115DB13F260B19D300290177 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB13E260B19D300290177 /* SearchBar.swift */; };
 		115DB144260B1D2C00290177 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB143260B1D2C00290177 /* ToolBar.swift */; };
+		115DB14C260C001100290177 /* DefaultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB14B260C001100290177 /* DefaultPage.swift */; };
+		115DB151260D338500290177 /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB150260D338500290177 /* ClearButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		115DB139260B069100290177 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		115DB13E260B19D300290177 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		115DB143260B1D2C00290177 /* ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
+		115DB14B260C001100290177 /* DefaultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPage.swift; sourceTree = "<group>"; };
+		115DB150260D338500290177 /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				115DB139260B069100290177 /* WebView.swift */,
 				115DB13E260B19D300290177 /* SearchBar.swift */,
 				115DB143260B1D2C00290177 /* ToolBar.swift */,
+				115DB14B260C001100290177 /* DefaultPage.swift */,
+				115DB150260D338500290177 /* ClearButton.swift */,
 			);
 			path = AcmeMobileBrowser;
 			sourceTree = "<group>";
@@ -272,7 +278,9 @@
 				115DB13F260B19D300290177 /* SearchBar.swift in Sources */,
 				115DB144260B1D2C00290177 /* ToolBar.swift in Sources */,
 				115DB10E260B066C00290177 /* ContentView.swift in Sources */,
+				115DB14C260C001100290177 /* DefaultPage.swift in Sources */,
 				115DB10C260B066C00290177 /* AcmeMobileBrowserApp.swift in Sources */,
+				115DB151260D338500290177 /* ClearButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
