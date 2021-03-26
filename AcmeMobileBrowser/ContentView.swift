@@ -96,19 +96,18 @@ struct ContentView: View {
                 }
             }
             
-            Spacer()
             TabView(selection: $selectedTab) {
                 ForEach(0..<tabs.count, id: \.self) { index in
                     VStack {
-                        Text("\(tabs[index].url.absoluteString)")
-                        
+                        //Text("\(tabs[index].url.absoluteString)")
+
                         WebView(
                             tab: tabs[index]
                         )
                         .tag(index)
                         .onReceive(tabs[index].$url) { newURL in
                             print("Receive: \(index): \(newURL)")
-                            
+
                             if selectedTab == index {
                                 url = newURL.absoluteString
                             }
@@ -116,8 +115,10 @@ struct ContentView: View {
                     }
                 }
             }
+            
             Spacer()
             Spacer()
+            
             HStack {
                 Spacer()
                 Button(action: {
@@ -146,18 +147,21 @@ struct ContentView: View {
         .sheet(isPresented: $isPresented, content: {
             NavigationView {
                 List {
-                    ForEach(tabs) { tab in
+                    ForEach(tabs.indices, id: \.self) { index in
                         Button(action: {
-                            
+                            select(tabIndex: index)
+                            isPresented.toggle()
                         }, label: {
                             HStack {
-                                Text(tab.url.absoluteString)
+                                Text(tabs[index].url.absoluteString)
                                 Spacer()
                                 Button(action: {
                                     //delete tab
+                                    deleteTab(at: index)
                                 }, label: {
                                     Image(systemName: "xmark.circle")
                                         .foregroundColor(.red)
+                                        .font(.title2)
                                 })
                             }
                         })
@@ -167,6 +171,7 @@ struct ContentView: View {
                 .navigationBarItems(trailing:
                     Button(action: {
                         //add tab
+                        addNewTab()
                     }, label: {
                         Image(systemName: "plus.circle.fill")
                             .foregroundColor(.green)
@@ -180,6 +185,18 @@ struct ContentView: View {
     func select(tabIndex: Int) {
         selectedTab = tabIndex
         url = tabs[tabIndex].url.absoluteString
+    }
+    
+    func addNewTab() {
+        let url = URL(string: "https://google.com")!
+        let newTab = Tab(id: tabs.count, url: url)
+        tabs.append(newTab)
+        select(tabIndex: tabs.count - 1)
+        //isPresented.toggle()
+    }
+    
+    func deleteTab(at index: Int) {
+        tabs.remove(at: index)
     }
 }
 

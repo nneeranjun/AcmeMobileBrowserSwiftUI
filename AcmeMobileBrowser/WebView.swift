@@ -35,12 +35,6 @@ struct WebView : UIViewRepresentable {
         return webView
     }
     
-//    func onTabChanged(webView: WKWebView) -> some View {
-//        var copy = self
-//        copy.webView = webView
-//        return copy
-//    }
-    
     func updateUIView(_ uiView: WKWebView, context: Context) {
         webView.load(URLRequest(url: tab.url))
     }
@@ -66,9 +60,6 @@ struct WebView : UIViewRepresentable {
                 return
             }
             
-            //print("New: \(newURL)")
-            //print("Old: \(self.webView.tab.url)")
-            
             if self.webView.tab.url != newURL {
                 self.webView.tab.url = webView.url!
             }
@@ -80,28 +71,6 @@ struct WebView : UIViewRepresentable {
     }
     
 }
-
-//class WebViewModel: ObservableObject {
-//
-//    @Published var webView: WKWebView
-//
-//    init(webView: WKWebView) {
-//        self.webView = webView
-//    }
-//
-////    func loadPage(url: String) {
-////        print(url)
-////        if let url_object = URL(string: url) {
-////            print("processing request")
-////            let request = URLRequest(url: url_object)
-////            webView.load(request)
-////        } else {
-////            print("error")
-////        }
-////
-////    }
-//
-//}
 
 //struct WebView_Previews: PreviewProvider {
 //    static var previews: some View {
